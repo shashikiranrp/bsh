@@ -6,7 +6,7 @@ GCC=$(CLANG_C) -Wall
 all: clean run
 
 compile: 
-	$(GCC) -c -I. *.c 
+	$(GCC) -c -Iinclude/ lib/*.c 
 
 link: compile
 	$(GCC) *.o -o $(BIN_NAME)
